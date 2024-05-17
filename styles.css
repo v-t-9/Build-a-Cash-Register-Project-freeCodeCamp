@@ -1,0 +1,84 @@
+:root{
+    --violet: #e9d3ff;
+    --pink: #f411d5;
+    --blue: #8d7df7;
+    --grey: #ebc3ff;
+    --size1: 1.5em;
+    --size2: 3em;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: var(--violet);
+    color: var(--pink);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    
+}
+#enter-cash{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}
+h1{
+    font-size: var(--size2);
+    font-family: "Inconsolata", monospace;
+}
+legend{
+    margin-bottom: 0.5em;
+}
+
+legend, #change-due, #the-price{
+    font-size: var(--size1);
+    font-family: "Inconsolata", monospace;
+}
+
+#cash{
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-size: var(--size1);
+    color: var(--pink);
+    border: none;
+    margin: 0;
+    background-color: var(--grey);
+    box-sizing: border-box;
+    outline:none;
+    padding-block:0;
+    padding-inline: 0;
+    padding: 0;
+   
+}
+#cash:focus{
+    border-bottom: 2px solid var(--pink);
+}
+#purchase-btn{
+    font-family: "Reddit Sans Condensed", sans-serif;
+    padding: 0;
+    background-color: var(--blue);
+    color: var(--grey);
+    font-weight: bold;
+    font-size: var(--size1);
+    border: none;
+
+}
+#cash, #purchase-btn{
+    width: 14em;
+    height: 2em;
+    border-radius: 4%;
+}
+#the-price{
+    width: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
